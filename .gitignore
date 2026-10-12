@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# secrets and local env
+.env
+.env.*
+!.env.example
+
+# logs
+*.log
+npm-debug.log*
+
+# local lead data (may contain PII) + private tooling
+data/*.json
+!data/.gitkeep
+hidden/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.vscode/

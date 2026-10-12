@@ -1,0 +1,19 @@
+# Render deploy config — succession-checker (Arbor Law / Homeplace Succession).
+# Paid instance (starter) per the build brief; the paid-upgrade click is
+# the founder's. Deploy config only here — nothing is changed in Render.
+services:
+  - type: web
+    name: succession-checker
+    runtime: node
+    plan: starter
+    buildCommand: npm ci
+    startCommand: node server.js
+    autoDeploy: true
+    healthCheckPath: /healthz
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: LEADS_TOKEN
+        sync: false # set in the Render dashboard; never commit secrets
+      - key: ANALYTICS_TOKEN
+        sync: false # set in the Render dashboard; never commit secrets

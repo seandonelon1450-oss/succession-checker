@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Data — Arbor Law™</title>
+<meta name="description" content="You own your data. Export your quiz answers in one tap, or delete them in one tap.">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="/js/theme.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/" aria-label="Arbor Law home">
+      <svg class="mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M10 54 A22 22 0 0 1 54 54"/>
+        <path d="M20 54 A12 12 0 0 1 44 54"/>
+        <path d="M32 54 L32 36"/>
+        <path d="M32 42 L25 35"/>
+        <path d="M32 42 L39 35"/>
+        <path d="M6 54 L58 54"/>
+      </svg>
+      <span class="wordmark">Arbor Law&trade;</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/quiz.html">Take the Quiz</a>
+      <a href="/data.html">Your Data</a>
+      <a href="/disclosure.html">Disclosure</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+    <span class="powered-badge" aria-label="Powered by Arbor">
+      <svg class="mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M10 54 A22 22 0 0 1 54 54"/>
+        <path d="M20 54 A12 12 0 0 1 44 54"/>
+        <path d="M32 54 L32 36"/>
+        <path d="M32 42 L25 35"/>
+        <path d="M32 42 L39 35"/>
+        <path d="M6 54 L58 54"/>
+      </svg>
+      <span class="pre">powered by</span><span class="name">Arbor</span>
+    </span>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">&#9681;</button>
+  </div>
+</header>
+
+<main id="main">
+  <article class="article">
+    <div class="reading">
+      <h1>Your data</h1>
+      <p class="standfirst">You own your data. Export it or delete it in one tap &mdash; right here.</p>
+
+      <div class="card">
+        <h3>What we hold</h3>
+        <p style="margin-top:12px;">Your quiz answers live only in this browser, on this device. We never see, store, or share them. That&rsquo;s the whole list.</p>
+        <p class="small muted" id="answers-status">Checking this device&hellip;</p>
+        <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:24px;">
+          <button class="btn" id="export-btn">Export my answers (JSON)</button>
+          <button class="btn btn-secondary" id="delete-btn">Delete my answers</button>
+        </div>
+        <p class="small muted" id="data-msg" style="margin-top:16px;" aria-live="polite"></p>
+      </div>
+
+      <div class="notice-box">
+        <span class="label">About contact-form information</span>
+        <p>If you filled out our contact form, your name, phone, email, parish, and quiz outcome are stored on our server so a real person can reach you. That information is <strong>not</strong> covered by the delete button above. To have it removed, <a href="/contact.html">contact us</a> and we will delete it. We never sell your information.</p>
+      </div>
+
+      <h2>You own your data</h2>
+      <p>Our ten promises, in plain words &mdash; the same on every Arbor product.</p>
+      <div class="charter">
+        <div class="charter-item"><p>Your data is yours. We hold it for you, to do work for you. Take it with you any time.</p></div>
+        <div class="charter-item"><p>Never sold. Not to advertisers, data brokers, providers, or partners. No ad trackers.</p></div>
+        <div class="charter-item"><p>Never used to train models. Not ours, not anyone&rsquo;s. The list of providers is public.</p></div>
+        <div class="charter-item"><p>Export in one tap. Everything, in a readable format (PDF + JSON/CSV).</p></div>
+        <div class="charter-item"><p>Delete in one tap. Gone from the live system right away, and from backups within 30 days.</p></div>
+        <div class="charter-item"><p>Encrypted. In transit and at rest. Device-only rooms we can&rsquo;t read at all.</p></div>
+        <div class="charter-item"><p>Collect the minimum. Each feature asks only for what it needs. Every connector is opt-in.</p></div>
+        <div class="charter-item"><p>Your choice of home. Our encrypted cloud by default, or on your device only.</p></div>
+        <div class="charter-item"><p>People see only what you share. Team access is limited, logged, and visible to you.</p></div>
+        <div class="charter-item"><p>No quiet changes. New use of your data? We ask first, in plain words. Silence never counts as yes.</p></div>
+      </div>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <svg class="mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" aria-hidden="true">
+          <path d="M10 54 A22 22 0 0 1 54 54"/>
+          <path d="M20 54 A12 12 0 0 1 44 54"/>
+          <path d="M32 54 L32 36"/>
+          <path d="M32 42 L25 35"/>
+          <path d="M32 42 L39 35"/>
+          <path d="M6 54 L58 54"/>
+        </svg>
+        <div class="wordmark">Arbor Law&trade;</div>
+        <p class="small">Homeplace Succession&trade; &mdash; flat-fee Louisiana successions and title.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/quiz.html">Take the Quiz</a></li>
+          <li><a href="/data.html">Your Data</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Legal">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/disclosure.html">Disclaimer &amp; Attorney Advertising Notice</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>The attorney</h4>
+        <p class="small">Thomas G. Donelon &middot; Metairie, Louisiana</p>
+        <p class="small" style="margin-top:12px;"><a href="/contact.html" style="color:#D9D2C7;">Talk to a person</a></p>
+      </div>
+    </div>
+    <p class="disclosure-text">Software powered by Arbor. Arbor Technologies is a software company, not a law firm. It does not provide legal services, does not represent clients, and does not share in legal fees.</p>
+    <p class="attorney-footer">Thomas G. Donelon &middot; Metairie, Louisiana</p>
+    <div class="footer-line">
+      <span>Powered by Arbor &middot; The Arbor Group &middot; She owns her data.</span>
+      <span class="badge-row">
+        <span class="powered-badge" aria-label="Powered by Arbor" style="display:inline-flex;">
+          <svg class="mark" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" aria-hidden="true">
+            <path d="M10 54 A22 22 0 0 1 54 54"/>
+            <path d="M20 54 A12 12 0 0 1 44 54"/>
+            <path d="M32 54 L32 36"/>
+            <path d="M32 42 L25 35"/>
+            <path d="M32 42 L39 35"/>
+            <path d="M6 54 L58 54"/>
+          </svg>
+          <span class="pre">powered by</span><span class="name">Arbor</span>
+        </span>
+        <span>&copy; 2026 Arbor Law&trade;</span>
+      </span>
+    </div>
+  </div>
+</footer>
+<script src="/js/analytics.js"></script>
+<script>
+(function () {
+  "use strict";
+  var KEY = "arbor.sc.quiz.v1";
+  var status = document.getElementById("answers-status");
+  var msg = document.getElementById("data-msg");
+  function read() {
+    try {
+      var raw = localStorage.getItem(KEY);
+      if (!raw) return null;
+      return JSON.parse(raw);
+    } catch (e) { return null; }
+  }
+  function refresh() {
+    var s = read();
+    if (s && s.answers && Object.keys(s.answers).length) {
+      status.textContent = "Found " + Object.keys(s.answers).length + " saved answers on this device.";
+    } else {
+      status.textContent = "No quiz answers on this device.";
+    }
+  }
+  document.getElementById("export-btn").addEventListener("click", function () {
+    var s = read();
+    if (!s || !s.answers || !Object.keys(s.answers).length) {
+      msg.textContent = "Nothing to export \u2014 no quiz answers on this device.";
+      return;
+    }
+    var payload = { product: "Succession Check", exported: new Date().toISOString(), answers: s.answers };
+    var blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "succession-check-answers.json";
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+    msg.textContent = "Downloaded your answers as JSON.";
+  });
+  document.getElementById("delete-btn").addEventListener("click", function () {
+    try { localStorage.removeItem(KEY); } catch (e) { /* private mode */ }
+    refresh();
+    msg.textContent = "Done \u2014 your quiz answers are gone from this device.";
+  });
+  refresh();
+})();
+</script>
+</body>
+</html>

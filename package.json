@@ -1,0 +1,1 @@
+{"dependencies":{"express":"^4.19.2"},"description":"Succession Checker — Louisiana succession-needs quiz + lead capture (V1).","engines":{"node":">=18"},"license":"UNLICENSED","main":"server.js","name":"succession-checker","private":true,"scripts":{"start":"node server.js"},"version":"1.0.0"}
